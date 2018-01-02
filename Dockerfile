@@ -1,4 +1,5 @@
 FROM ubuntu:17.04
+FROM ruby
 
 LABEL de.mindrunner.android-docker.flavour="built-in"
 
@@ -28,3 +29,7 @@ WORKDIR /opt/android-sdk-linux
 RUN /opt/tools/entrypoint.sh built-in
 
 CMD /opt/tools/entrypoint.sh built-in
+
+ENV FASTLANE_VERSION=2.12.0
+
+RUN gem install fastlane:$FASTLANE_VERSION -NV
