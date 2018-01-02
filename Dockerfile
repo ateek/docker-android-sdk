@@ -30,6 +30,6 @@ RUN /opt/tools/entrypoint.sh built-in
 
 CMD /opt/tools/entrypoint.sh built-in
 
-ENV FASTLANE_VERSION=2.12.0
+ENV FASTLANE_VERSION=2.71.1
 
 RUN gem install fastlane:$FASTLANE_VERSION -NV
