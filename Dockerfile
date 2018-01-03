@@ -7,6 +7,7 @@ ENV ANDROID_SDK_HOME /opt/android-sdk-linux
 ENV ANDROID_SDK_ROOT /opt/android-sdk-linux
 ENV ANDROID_HOME /opt/android-sdk-linux
 ENV ANDROID_SDK /opt/android-sdk-linux
+ENV LANG C.UTF-8
 
 # ------------------------------------------------------
 # --- Install required tools
@@ -30,6 +31,6 @@ RUN /opt/tools/entrypoint.sh built-in
 
 CMD /opt/tools/entrypoint.sh built-in
 
-ENV FASTLANE_VERSION=2.71.1
+ENV FASTLANE_VERSION=2.72.0
 
 RUN gem install fastlane:$FASTLANE_VERSION -NV
